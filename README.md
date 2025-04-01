@@ -82,7 +82,8 @@ node server.js
 - bcryptjs
 - cors
 - nodemon
-
+- Install them with : npm install react-router-dom axios react-toastify react-icons react-responsive-carousel
+ 
 ### ✅ Frontend
 - React
 - React Router
@@ -90,6 +91,8 @@ node server.js
 - React Toastify
 - React Responsive Carousel
 - FontAwesome
+- Install them with : npm install react-router-dom axios react-toastify react-icons react-responsive-carousel
+
 
 ---
 
