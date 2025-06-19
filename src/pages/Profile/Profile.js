@@ -1,7 +1,8 @@
+const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api/auth/`;
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./profile.css";
-
+const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
 const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api/auth/`;
 
 
@@ -37,7 +38,7 @@ const Profile = () => {
                 // Fetch full movie details from TMDB
                 console.log("🔹 Fetching movie details...");
                 const movieDetailsPromises = userData.favorites.map((movieId) =>
-                    axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_URL}`)
+                    axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`)
                 );
 
                 const moviesData = await Promise.all(movieDetailsPromises);
