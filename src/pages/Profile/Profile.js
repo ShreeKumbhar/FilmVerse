@@ -37,7 +37,7 @@ const Profile = () => {
                 // Fetch full movie details from TMDB
                 console.log("🔹 Fetching movie details...");
                 const movieDetailsPromises = userData.favorites.map((movieId) =>
-                    axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`)
+                    axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_URL}`)
                 );
 
                 const moviesData = await Promise.all(movieDetailsPromises);
